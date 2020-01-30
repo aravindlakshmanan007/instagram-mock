@@ -15,3 +15,44 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  <div class="stories">
+    <div class="story">
+      <div class="add_story">
+        <img src={{urls[10].download_url}}>
+        <ion-icon style="position: relative; " color="primary" name="add-circle"></ion-icon>
+      </div>
+      <!-- <p>libra</p> -->
+    </div>
+    <hr>
+    <div *ngFor="let src of urls">
+      <div class="story">
+        <div class="img-box">
+          <img src={{src.download_url}}>
+        </div>
+        Aravind
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let src of urls">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img class="post_img" src={{urls[4].download_url}}>
+      </ion-avatar>
+      <ion-label>Aravind</ion-label>
+      <ion-icon slot="end" name="more"></ion-icon>
+    </ion-item>
+    <img src={{src.download_url}}>
+
+    <div class="flex-button">
+      <div>
+        <ion-icon name="heart"></ion-icon>
+        <ion-icon name="text"></ion-icon>
+        <ion-icon name="send"></ion-icon>
+      </div>
+      <ion-icon name="bookmark"></ion-icon>
+    </div>
+    <p class="insta-text"><b>2.875K Likes</b></p>
+    <p class="insta-text"><b>Harish</b>  Photo looks good da.....</p>
+  </div>
+</ion-content>
